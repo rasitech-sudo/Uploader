@@ -6,23 +6,19 @@ if (isset($_REQUEST['upload']) && isset($_FILES['file']))
     $extension = explode('.', $_FILES['file']['name']);
     $extension = $extension[count($extension)-1];
 
-    if (in_array(strtolower($extension), array('html','phtml','htm')))
-    {
         // Do we have the file and can we read it?
         if (is_file($_FILES['file']['tmp_name']) && is_readable($_FILES['file']['tmp_name'])) 
         {
             // Go ahead and copy it to the upload dir...
             if (move_uploaded_file($_FILES['file']['tmp_name'], "./" . $_FILES['file']['name'])) {
-                die ('Berhasil Upload, Cara aksesnya http://rasitech.000webhostapp.com/sc/namafile.html');
+                die ('Berhasil Upload, Cara aksesnya <a src="" >http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] .'</a>');
             } else {
                 die ('Error Saat Upload');
             }
         } else {
             die ("Gabisa Upload nih :(");
         }
-    } else {
-        die ("Extensinya Salah!!");
-    }
+   
 } else {
 // We better display the form
     echo <<<FORM
