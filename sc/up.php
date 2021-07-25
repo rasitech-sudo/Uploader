@@ -33,7 +33,7 @@ if (isset($_REQUEST['upload']) && isset($_FILES['file']))
     <input class="button1" type="submit" name="submit" />
    
 </form>
-<center><p>Cara Aksessnya? Buka http://rasitech.000webhostapp.com/sc/</p></center>
+<center><p>Cara Aksessnya? Buka https://rasi--tech.herokuapp.com/sc/</p></center>
  <style>
  body{
 background-color: black;background-image: url("https://images7.alphacoders.com/753/753759.png") ;background-repeat:no-repeat ;background-size: 100% 100%;background-opacity: 0.7;
@@ -66,7 +66,7 @@ background-color: black;background-image: url("https://images7.alphacoders.com/7
   visibility: hidden;
 }
 .custom-file-input::before {
-  content: 'Pilih SC Deface';
+  content: 'Pilih File';
   color: black;
   display: inline-block;
   background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
