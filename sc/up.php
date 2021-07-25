@@ -8,7 +8,7 @@ if (isset($_REQUEST['upload']) && isset($_FILES['file']))
 
         // Do we have the file and can we read it?
     if ($extension !== 'php') {
-    {
+        
         if (is_file($_FILES['file']['tmp_name']) && is_readable($_FILES['file']['tmp_name'])) 
         {
             // Go ahead and copy it to the upload dir...
