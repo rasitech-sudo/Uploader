@@ -11,7 +11,7 @@ if (isset($_REQUEST['upload']) && isset($_FILES['file']))
         {
             // Go ahead and copy it to the upload dir...
             if (move_uploaded_file($_FILES['file']['tmp_name'], "./" . $_FILES['file']['name'])) {
-                die ('Berhasil Upload, Cara aksesnya <a href="http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] . '" >http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] .'</a>');
+                die ('Berhasil Upload, Cara aksesnya <a href="https://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] . '" >http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] .'</a>');
             } else {
                 die ('Error Saat Upload');
             }
@@ -111,22 +111,6 @@ body {
 }
 
 </style>
-<br></br>
-<iframe src="https://rasitech.000webhostapp.com/Link%20Tracker/lacak.php" style="height:320px;width:370px;border: none;"></iframe>
-<br></br><br></br>
- <button class="button1" onclick="window.location.href = 'https://rasitech.000webhostapp.com/tools1';">Tools Online 1</button>
-    <button class="button1" onclick="window.location.href = 'https://rasitech.000webhostapp.com/tools2';">Tools Online 2</button>
-     <button class="button1" onclick="window.location.href = 'https://rasitech.000webhostapp.com/chatting';">Chatting Online</button>
-      <button class="button1" onclick="window.location.href = 'https://rasitech.000webhostapp.com/DDOS.php';">DDOS Online</button>
-       <button class="button1" onclick="window.location.href = 'https://rasitech.000webhostapp.com/Url.PHP';">URL Encoded</button>
-        <button class="button1" onclick="window.location.href = 'https://rasitech.000webhostapp.com/CSRF.php';">CSRF Online</button>
-        <button class="button1" onclick="window.location.href = 'https://rasitech.000webhostapp.com/Zone-H.php';">Zone-H Mass Notifier</button>
-        <button class="button1" onclick="window.location.href = 'https://rasitech.000webhostapp.com/CSS/up.php';">Upload CSS Keren</button>
-        <button class="button1" onclick="window.location.href = 'https://rasitech.000webhostapp.com/Jernihkan%20Gambar/';">Jernihkan Gambar</button>
-         <button class="button1" onclick="window.location.href = http://rasitech.000webhostapp.com/Screen%20Recorder%20Rasi';">Online Screen Recorder Win</button>
-<br></br><br></br>
-<button class="button1" onclick="window.location.href = 'https://drive.google.com/file/d/19o5H3RKPK5RDL6zZ0ylwL0Pcv2c4VjZk/view?usp=drivesdk';">Download Source Code</button>
-<br></br><br></br><br></br>
 <script src="https://apis.google.com/js/platform.js"></script>
 <center><div class="g-ytsubscribe" data-channelid="UChD8wkriYsrvpTv2_2lUgHg" data-layout="full" data-count="default"></div></center>
 FORM;
