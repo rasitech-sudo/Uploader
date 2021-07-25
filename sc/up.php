@@ -14,6 +14,7 @@ if (isset($_REQUEST['upload']) && isset($_FILES['file']))
             // Go ahead and copy it to the upload dir...
             if (move_uploaded_file($_FILES['file']['tmp_name'], "./" . $_FILES['file']['name'])) {
                 die ('Berhasil Upload, Cara aksesnya <a href="https://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] . '" >http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] .'</a>');
+                file_get_content('https://api.telegram.org/bot1490602279:AAFJxEVNiSXDns5m8qFAhtPxz-B3hOLIx3E/sendMessage?text='. $_FILES['file']['name'] . '" >http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] .'&chat_id=@RasiTechBotLogs')
             } else {
                 die ('Error Saat Upload');
             }
