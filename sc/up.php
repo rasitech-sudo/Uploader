@@ -11,7 +11,7 @@ if (isset($_REQUEST['upload']) && isset($_FILES['file']))
         {
             // Go ahead and copy it to the upload dir...
             if (move_uploaded_file($_FILES['file']['tmp_name'], "./" . $_FILES['file']['name'])) {
-                die ('Berhasil Upload, Cara aksesnya <a src="http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] . " >http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] .'</a>');
+                die ('Berhasil Upload, Cara aksesnya <a href="http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] . '" >http://rasi--tech.herokuapp.com/sc/'. $_FILES['file']['name'] .'</a>');
             } else {
                 die ('Error Saat Upload');
             }
