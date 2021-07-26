@@ -1,3 +1,3 @@
 <?php
-header('Location : https://rasi--tech.herokuapp.com/')
+header("location:../index.php");
 ?>
