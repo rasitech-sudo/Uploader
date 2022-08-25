@@ -1,3 +1,3 @@
 # Uploader
 
-Example : https://rasi--tech.herokuapp.com/
+Example : https://hosting.rasitechchannel.my.id
